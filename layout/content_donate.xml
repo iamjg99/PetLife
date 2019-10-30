@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pllogo"
+    android:orientation="horizontal"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".donate"
+    tools:showIn="@layout/app_bar_donate">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="330dp"
+                android:layout_height="136dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="25dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/uploadimg"
+                android:onClick="selectImage"
+                android:scaleType="fitCenter" />
+        </TableRow>
+
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="383dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Please enter your userID"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/edt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Example- user123" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:defaultFocusHighlightEnabled="true" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Please choose a petID"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/edt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Example- pet123" />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Pet breed"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/edt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Example- Labrador" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Male"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Female"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txt5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Pet's age"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/edt5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Example- 1 Year" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_gravity="end"
+            android:layout_marginTop="15dp"
+            android:gravity="end"
+            android:text="Proceed"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textStyle="bold" />
+    </TableLayout>
+
+</LinearLayout>
